@@ -10,7 +10,7 @@ router = routers.DefaultRouter()
 router.register(r'', GameLevelViewSet)
 
 urlpatterns = [
-    path('', views.image_upload_view, name = "home"),
+    path('', views.image_upload_view,),
     # path('', views.GameLevelViewSet, name = "api"),
 
     path('upload/', views.image_upload_view, name = "upload image"),
